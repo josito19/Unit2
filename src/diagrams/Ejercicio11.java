@@ -1,4 +1,4 @@
-package Diagrams;
+package diagrams;
 
 import java.util.Scanner;
 
@@ -13,12 +13,15 @@ public class Ejercicio11 {
 		double salarioBruto;
 		double salarioNeto;
 		double tasas;
-
+		
+		//Solicitamos el número de horas y la tarifa
 		System.out.println("Horas trabajadas:");
 		horasTrabajadas = sc.nextDouble();
 		System.out.println("Tarifa horas:");
 		tarifaHoras = sc.nextDouble();
 
+		
+		//Calculamos las tasas segun los datos introducidos
 		if (horasTrabajadas < 35) {
 			salarioBruto = horasTrabajadas * tarifaHoras;
 		} else {

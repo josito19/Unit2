@@ -1,4 +1,4 @@
-package Diagrams;
+package diagrams;
 
 import java.util.Scanner;
 

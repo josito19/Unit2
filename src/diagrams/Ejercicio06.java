@@ -1,8 +1,8 @@
-package Diagrams;
+package diagrams;
 
 import java.util.Scanner;
 
-public class Ejercicio07 {
+public class Ejercicio06 {
 
 	public static void main(String[] args) {
 		// Creamos el escaner y las variables
@@ -18,13 +18,11 @@ public class Ejercicio07 {
 		System.out.println("Introduzca el segundo número:");
 		num2 = sc.nextInt();
 
-		// Los comparamos y mostramos que numero es mayor
+		// Los comparamos y mostramos en orden ascendente
 		if (num1 > num2) {
-			System.out.println("El " + num1 + " es el mayor");
-		} else if (num1 == num2) {
-			System.out.println("Son iguales");
+			System.out.println(num2 + "<" + num1);
 		} else {
-			System.out.println("El " + num2 + " es el mayor");
+			System.out.println(num1 + "<" + num2);
 		}
 
 		sc.close();
