@@ -29,7 +29,7 @@ public class Ejercicio01 {
 		case 9, 10:
 			yield "Sobresaliente";
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + nota);
+			yield "Fuera de rango";
 		};
 
 		// Mostramos el mensaje segun la nota
