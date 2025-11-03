@@ -12,8 +12,12 @@ public class Ejercicio04 {
 		int numero2 = 0;
 		int suma;
 
+		String tirada1;
+		String tirada2;
+
 		System.out.println("Primera tirada:");
-		switch (sc.next()) {
+		tirada1 = sc.next();
+		switch (tirada1) {
 		case "UNO":
 			numero1 = 1;
 			break;
@@ -34,7 +38,8 @@ public class Ejercicio04 {
 			break;
 		}
 		System.out.println("Segunda tirada:");
-		switch (sc.next()) {
+		tirada2 = sc.next();
+		switch (tirada2) {
 		case "UNO":
 			numero2 = 1;
 			break;
@@ -53,11 +58,16 @@ public class Ejercicio04 {
 		case "SEIS":
 			numero2 = 6;
 			break;
+		default:
+			System.out.println("Tirada errónea");
 		}
 
 		suma = numero1 + numero2;
-
-		System.out.println(suma);
+		if (suma == 0) {
+			System.out.println("Error");
+		} else {
+			System.out.println(suma);
+		}
 
 		sc.close();
 	}

@@ -20,6 +20,9 @@ public class Ejercicio04 {
 		// suma almacena la suma de los numeros randoms
 		int suma;
 
+		// sumaUsuario almacena la suma introducida por el usuario
+		int sumaUsuario;
+
 		// Creamos los dos numeros aleatorios y los asignamos a sus variables
 		Random rand = new Random();
 		numRand1 = rand.nextInt(1, 100);
@@ -30,8 +33,8 @@ public class Ejercicio04 {
 
 		// Solicitamos al usuario el resultado de la suma
 		System.out.println("Introduzca el resultado de sumar " + numRand1 + " y " + numRand2);
-
-		System.out.println(sc.nextInt() == suma ? "Correcto" : "Incorrecto");
+		sumaUsuario = sc.nextInt();
+		System.out.println(sumaUsuario == suma ? "Correcto" : "Incorrecto, la suma es " + suma);
 
 		sc.close();
 	}
