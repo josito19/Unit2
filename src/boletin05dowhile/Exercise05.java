@@ -1,4 +1,4 @@
-package dowhile;
+package boletin05dowhile;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -29,13 +29,14 @@ public class Exercise05 {
 			// Si el numero aleatorio es mayor o menor modificamos los límites
 			if (respuesta.equalsIgnoreCase("mayor")) {
 				min = numAleatorio + 1;
-			} else if (respuesta.equals("menor")) {
+			} else if (respuesta.equalsIgnoreCase("menor")) {
 				max = numAleatorio;
+			} else {
+				System.out.println("Introduce una respuesta válida");
 			}
-
 			// Cuando el usuario escriba igual se cierra el bucle
 		} while (!respuesta.equalsIgnoreCase("igual"));
-
+		System.out.println("Enhorabuena");
 		sc.close();
 	}
 

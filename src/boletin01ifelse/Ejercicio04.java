@@ -1,4 +1,4 @@
-package ifelse;
+package boletin01ifelse;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package switchexercises;
+package boletin02switchexercises;
 
 import java.util.Scanner;
 
@@ -8,13 +8,17 @@ public class Ejercicio04 {
 		// Creacion del escaner y de las variables
 		Scanner sc = new Scanner(System.in);
 
+		// numero1 y 2 almacenan el resultado numérico de la tirada
 		int numero1 = 0;
 		int numero2 = 0;
+		// suma almcanará la suma de ambas tiradas
 		int suma;
 
+		// tirada1 y 2 almacenan la tirada del jugador formato texto
 		String tirada1;
 		String tirada2;
 
+		// Pedimos la primera tirada y asignamos el valor correspondiente
 		System.out.println("Primera tirada:");
 		tirada1 = sc.next();
 		switch (tirada1) {
@@ -36,7 +40,11 @@ public class Ejercicio04 {
 		case "SEIS":
 			numero1 = 6;
 			break;
+		default:
+			System.out.println("Tirada errónea");
 		}
+
+		// Lo mismo con la segunda tirada
 		System.out.println("Segunda tirada:");
 		tirada2 = sc.next();
 		switch (tirada2) {
@@ -62,13 +70,9 @@ public class Ejercicio04 {
 			System.out.println("Tirada errónea");
 		}
 
+		// Sumamos las tiradas y mostramos por pantalla
 		suma = numero1 + numero2;
-		if (suma == 0) {
-			System.out.println("Error");
-		} else {
-			System.out.println(suma);
-		}
-
+		System.out.println(suma == 0 ? "Error" : suma);
 		sc.close();
 	}
 

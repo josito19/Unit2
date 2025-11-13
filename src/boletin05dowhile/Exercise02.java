@@ -1,4 +1,4 @@
-package dowhile;
+package boletin05dowhile;
 
 import java.util.Scanner;
 

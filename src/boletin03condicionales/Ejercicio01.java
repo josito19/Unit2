@@ -1,4 +1,4 @@
-package condicionales;
+package boletin03condicionales;
 
 import java.util.Scanner;
 

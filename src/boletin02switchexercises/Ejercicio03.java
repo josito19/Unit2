@@ -1,4 +1,4 @@
-package switchexercises;
+package boletin02switchexercises;
 
 import java.util.Scanner;
 

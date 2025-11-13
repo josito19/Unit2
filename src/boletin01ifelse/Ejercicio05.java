@@ -1,4 +1,4 @@
-package ifelse;
+package boletin01ifelse;
 
 import java.util.Scanner;
 
@@ -8,15 +8,16 @@ public class Ejercicio05 {
 		// Creacion del escaner y de las variables
 		Scanner sc = new Scanner(System.in);
 
-		//
 		String jugador1;
 		String jugador2;
 
+		// Pedir la jugada y almacenarla
 		System.out.println("Jugador 1:");
 		jugador1 = sc.next();
 		System.out.println("Jugador 2:");
 		jugador2 = sc.next();
 
+		// Analizamos los casos posibles y mostramos el ganador
 		if (jugador1.equalsIgnoreCase(jugador2)) {
 			System.out.println("Empate");
 		} else if (jugador1.equalsIgnoreCase("Piedra") && jugador2.equalsIgnoreCase("Tijeras")) {
