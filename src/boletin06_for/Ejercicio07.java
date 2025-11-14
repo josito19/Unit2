@@ -1,4 +1,4 @@
-package boletin6_for;
+package boletin06_for;
 
 import java.util.Scanner;
 
@@ -34,11 +34,14 @@ public class Ejercicio07 {
 		num = sc.nextInt();
 
 		// Si el número es 1 o al dividirlo da 0, es primo
-		for (int i = 2; i < num; i++) {
+	if(num == 1) {
+		primo = false;
+	} else {
+	 for (int i = 2; i < num; i++) {
 			if (num == 1 || num % i == 0) {
 				primo = false;
 			}
-
+	 }
 		}
 
 		// Mostramos el resultado

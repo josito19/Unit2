@@ -1,4 +1,4 @@
-package boletin6_for;
+package boletin06_for;
 
 import java.util.Scanner;
 
